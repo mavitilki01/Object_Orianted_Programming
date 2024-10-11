@@ -8,9 +8,14 @@ public class Main {
             System.out.println("Enter a value");
             int value =input.nextInt();
 
-        } catch (InputMismatchException exception) {
-            System.out.println(exception.getMessage());
         }
+        catch (InputMismatchException exception) {
+            System.out.println("Error: Enter a int value " + exception.getMessage());
+        }
+        finally{
+            System.out.println("Done");
+        }
+
 
 
     }
