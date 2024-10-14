@@ -12,7 +12,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
 
         worker2.setName("Şerif");
-        System.out.println("Enter salary value:");
+        System.out.println("Enter worker2's salary value:");
         float salary= input.nextFloat();
 
         try{
