@@ -6,7 +6,6 @@ public class Main {
            new Car(3,1992),
            new Car(4,2004),
         };
-
         Garage garage = new Garage(cars);
         garage.cars[0].setPower(563);
         garage.cars[1].setPower(1000);
@@ -19,14 +18,6 @@ public class Main {
 
         cars[2].startAndMove();
         cars[2].stop();
-        cars[3].startAndMove();
-        cars[1].stop();
-        cars[0].stop();
-        cars[3].startAndMove();
-        cars[2].startAndMove();
-        cars[1].stop();
         cars[1].startAndMove();
-
-
     }
 }
