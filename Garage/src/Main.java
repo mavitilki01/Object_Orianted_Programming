@@ -16,7 +16,7 @@ public class Main {
         garage.printCarsOlderThan(0);
 
         System.out.println("Number of cars in the garage: " + Car.counter);
-        
+
         cars[2].startAndMove();
         cars[2].stop();
         cars[3].startAndMove();
