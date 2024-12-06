@@ -1,36 +1,42 @@
 import java.util.Scanner;
 
 public class Player {
-    Scanner input =new Scanner(System.in);
-    String name;
-    static int trials;
-    GuessingGame guess;
+    private String name;
+    private int trial;
+    private static int win;
 
-    public Player(String name){
+    Player(String name){
         this.name=name;
-
+        this.trial=0;
+        win=0;
+    }
+    String getName(){
+        return this.name;
+    }
+    int getTrial(){
+        return this.trial;
+    }
+    int getWin(){
+        return win;
+    }
+    void increaseTrial(){
+        trial++;
+    }
+    int increaseWin(int win){
+        return win++;
     }
 
-    public void Guess(){
-        if(GuessingGame.isOver) return;
-        System.out.print("Guess it!\t");
-
-
-
-        for(int i=0;i<10;i++){
-            System.out.println("Enter a valid 1 to 100");
-            int think = input.nextInt();
-            if(0>think || think>100){
-                System.out.println("Wrong valid!");
-                i--;
-            }
-            else if(guess==think){
-
-            }
-        }
-
-
-
-
+    String playerInfo(){
+        return getName() + ":" + "Your wins: "+ getWin()+ "\nTrials: "+ getTrial();
     }
+
+
+
+/*
+3.	Oyuncu Sınıfı:
+o	İsim, oynanan oyun sayısı ve galibiyet sayısı dahil olmak üzere oyuncu verilerini depolar.
+o	Oynanan oyunları ve kazançları artırmak için yöntemler içerir.
+
+ */
+
 }

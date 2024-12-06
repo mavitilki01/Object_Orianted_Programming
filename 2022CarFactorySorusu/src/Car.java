@@ -17,8 +17,9 @@ public class Car {
         this("unknown",0,year);}
 
     public void setYear(int year){
-        if(year<2022){
-            throw new IllegalArgumentException("yıl 2022 den küçük olmalı!");}
+        if(year>2022){
+            throw new IllegalArgumentException("Yıl 2022 den küçük olmalı!");
+        }
         this.year=year;}
 
     public void setMaxSpeed(int maxSpeed) {this.maxSpeed = maxSpeed;}
@@ -29,5 +30,5 @@ public class Car {
     public String getBrand() {return brand;}
 
     public String getCarInfo(){
-        return ("Car brand: "+ this.brand+"\tMax speed: "+ this.maxSpeed+ "\tCar year: "+this.year);}
+        return ("Car brand: "+ this.brand + "\t\tMax speed: "+ this.maxSpeed+ "\t\tCar year: "+this.year);}
 }
